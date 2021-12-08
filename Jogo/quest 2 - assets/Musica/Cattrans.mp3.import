@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Cattrans.mp3-a9841271462ba1f3b800ea7c0d089487.mp3str"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/Musica/Cattrans.mp3"
+dest_files=[ "res://.import/Cattrans.mp3-a9841271462ba1f3b800ea7c0d089487.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

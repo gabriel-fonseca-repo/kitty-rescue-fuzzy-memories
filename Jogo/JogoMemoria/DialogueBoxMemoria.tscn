@@ -1,0 +1,531 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Jogo/JogoMemoria/DialogueBoxMemoria.gd" type="Script" id=1]
+[ext_resource path="res://Jogo/quest 2 - assets/Fontes/Minecraftia-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/Illustration2.png" type="Texture" id=3]
+[ext_resource path="res://Jogo/quest 2 - assets/Illustratio9gkgg2.png" type="Texture" id=4]
+[ext_resource path="res://Jogo/JogoMemoria/AssetsMemoria/carta.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 8
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "ArenaChickBoy1"
+length = 2.0
+
+[sub_resource type="Animation" id=3]
+resource_name = "ArenaChickBoy2"
+
+[sub_resource type="Animation" id=4]
+resource_name = "ArenaChickBoy3"
+length = 5.0
+
+[sub_resource type="Animation" id=5]
+resource_name = "ArenaChickBoy4"
+length = 5.0
+
+[sub_resource type="Animation" id=6]
+resource_name = "ArenaChickBoy5"
+
+[sub_resource type="Animation" id=7]
+resource_name = "ArenaChickBoy6"
+
+[sub_resource type="Animation" id=8]
+resource_name = "ArenaKitty1"
+
+[sub_resource type="Animation" id=9]
+resource_name = "ArenaKitty2"
+
+[sub_resource type="Animation" id=10]
+resource_name = "ArenaKitty3"
+
+[sub_resource type="Animation" id=11]
+resource_name = "ArenaKitty4"
+length = 2.0
+
+[sub_resource type="Animation" id=12]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Intro1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Intro2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Intro3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Intro3:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "Level1b"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level1b:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Level1c"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level1c:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "Level1d"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level1d:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "Level2b"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level2b:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=21]
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "Level3b"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3b:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "Level3c"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3c:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "Level3d"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3d:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "Level3e"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3e:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="DialogueBox" type="Control"]
+margin_left = 3.0
+margin_right = 240.0
+margin_bottom = 77.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_left = 1.25
+anchor_top = 0.6
+anchor_right = 1.25
+anchor_bottom = 0.6
+margin_left = -298.098
+margin_top = -46.2493
+margin_right = -69.0978
+margin_bottom = 32.7507
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Carta" type="Sprite" parent="."]
+visible = false
+position = Vector2( 115.272, 59.9462 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 5 )
+
+[node name="PortraitChickBoyCarta" type="Sprite" parent="."]
+visible = false
+position = Vector2( 165.786, 85.4973 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="Intro1" type="Label" parent="."]
+visible = false
+margin_left = 42.5613
+margin_top = 12.7194
+margin_right = 159.561
+margin_bottom = 107.719
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Dear KITTY, it is I, your favorite archenemy - CHICK BOY! I invite you to join me in my humble abode for a quick game of cards between frenemies! "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro2" type="Label" parent="."]
+visible = false
+margin_left = 43.0
+margin_top = 11.0
+margin_right = 160.0
+margin_bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "If you ever want to see your little furballs again, that is! Just step into the stone portal at the forbidden forest and you're set! 
+Love, Chick Boy."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro3" type="Label" parent="."]
+visible = false
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 157.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: .................. Creep."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1" type="Label" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 158.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: YOU MADE IT! *Ahem* You made it. Good. 
+Kitty the Witch, I bid you to step forward!"
+autowrap = true
+percent_visible = 0.4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1b" type="Label" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 158.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: What the heck? You've turned my cats into CARDS?"
+autowrap = true
+percent_visible = 0.666667
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1c" type="Label" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 158.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: Yup! Glad you noticed! Try and find them, if you can... But you better CONCENTRATE  or else the cards will disappear!"
+autowrap = true
+percent_visible = 0.4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1d" type="Label" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 158.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: UGH! Whatever, next time won't be so easy!"
+autowrap = true
+percent_visible = 0.4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Label" parent="."]
+visible = false
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 166.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: Things are getting interesting! If you don't CONCENTRATE, my powerful vibrating spell will make you move slower than molasses!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2b" type="Label" parent="."]
+visible = false
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 166.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: Now you've done it!!! 
+Just step into the freaking portal already, would ya?! This isn't over, you'll see..."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: I'm done playing, Kitty the Witch! Now, I'll combine both my spells so you better CONCENTRATE if you wanna keep moving and keep those cards visible!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3b" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: I.... I.... GOSH DANGIT!! When will I be strong enough to defeat you?"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3c" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: Pretty much never. And now that I've honed my concentration skills thanks to you, I'm even more powerful than before!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3d" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: Ugh! Goodbye! I'll get back at you just yet!!!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3e" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: Good grief! Well, time to go home, babies....
+Do any of you have any idea who that talking chicken was just now?"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortraitBruxinha" type="Sprite" parent="."]
+visible = false
+position = Vector2( 205.125, 43.7846 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+flip_h = true
+
+[node name="PortraitChickBoy" type="Sprite" parent="."]
+visible = false
+position = Vector2( 208.395, 40.5143 )
+scale = Vector2( 3.5, 3.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/ArenaChickBoy1 = SubResource( 2 )
+anims/ArenaChickBoy2 = SubResource( 3 )
+anims/ArenaChickBoy3 = SubResource( 4 )
+anims/ArenaChickBoy4 = SubResource( 5 )
+anims/ArenaChickBoy5 = SubResource( 6 )
+anims/ArenaChickBoy6 = SubResource( 7 )
+anims/ArenaKitty1 = SubResource( 8 )
+anims/ArenaKitty2 = SubResource( 9 )
+anims/ArenaKitty3 = SubResource( 10 )
+anims/ArenaKitty4 = SubResource( 11 )
+anims/Intro1 = SubResource( 12 )
+anims/Intro2 = SubResource( 13 )
+anims/Intro3 = SubResource( 14 )
+anims/Level1 = SubResource( 15 )
+anims/Level1b = SubResource( 16 )
+anims/Level1c = SubResource( 17 )
+anims/Level1d = SubResource( 18 )
+anims/Level2 = SubResource( 19 )
+anims/Level2b = SubResource( 20 )
+anims/Level3 = SubResource( 21 )
+anims/Level3b = SubResource( 22 )
+anims/Level3c = SubResource( 23 )
+anims/Level3d = SubResource( 24 )
+anims/Level3e = SubResource( 25 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

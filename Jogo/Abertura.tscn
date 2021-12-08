@@ -1,0 +1,298 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Jogo/Abertura.gd" type="Script" id=1]
+[ext_resource path="res://Jogo/movingBackground.gd" type="Script" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/fundo.png" type="Texture" id=3]
+[ext_resource path="res://Jogo/quest 2 - assets/Musica/04-yomi.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/meow.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Jogo/quest 2 - assets/telainicial-02.png" type="Texture" id=6]
+[ext_resource path="res://Jogo/quest 2 - assets/orelhaesquerda-01.png" type="Texture" id=7]
+[ext_resource path="res://Jogo/quest 2 - assets/play-03.png" type="Texture" id=8]
+[ext_resource path="res://Jogo/quest 2 - assets/nome.png" type="Texture" id=9]
+[ext_resource path="res://Jogo/quest 2 - assets/purplebackground.png" type="Texture" id=10]
+[ext_resource path="res://Jogo/quest 2 - assets/orelhaDireita-01.png" type="Texture" id=11]
+[ext_resource path="res://Jogo/quest 2 - assets/cathead-01.png" type="Texture" id=12]
+
+[sub_resource type="Animation" id=1]
+resource_name = "moveEars"
+length = 10.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer/leftear:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 4.7, -0.590231, 4.7 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer/leftear:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.194712, 0.194712 ), Vector2( 0.189264, 0.192525 ), Vector2( 0.194712, 0.194712 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimationPlayer/leftear:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 170.573, 86.7028 ), Vector2( 174.116, 83.3167 ), Vector2( 170.573, 86.7028 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimationPlayer/rightear:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 159.257, 81.2108 ), Vector2( 160.202, 77.431 ), Vector2( 159.257, 81.2108 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationPlayer/rightear:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 3.01787, 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("AnimationPlayer/rightear:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.185517, 0.185517 ), Vector2( 0.185517, 0.185517 ), Vector2( 0.185517, 0.185517 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "grow"
+tracks/0/type = "value"
+tracks/0/path = NodePath("closeanimation/leaveBtn:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.178725, 0.178725 ), Vector2( 0.198234, 0.198234 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("closeanimation/leaveBtn:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 167.315, 129.931 ), Vector2( 167.647, 130.025 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "ungrow"
+tracks/0/type = "value"
+tracks/0/path = NodePath("closeanimation/leaveBtn:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.198234, 0.198234 ), Vector2( 0.178725, 0.178725 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("closeanimation/leaveBtn:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 167.647, 130.025 ), Vector2( 167.315, 129.931 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 61.5035, 21.2051 )
+
+[sub_resource type="Animation" id=5]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("playanimation/playBtn:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.133718, 0.133718 ), Vector2( 0.148504, 0.148504 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("playanimation/playBtn:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 168.961, 112.921 ), Vector2( 168.291, 113.202 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("playanimation/playBtn:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.148504, 0.148504 ), Vector2( 0.133718, 0.133718 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("playanimation/playBtn:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 168.291, 113.202 ), Vector2( 168.961, 112.921 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 97.6378, 39.5663 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0.5 )
+motion_mirroring = Vector2( 389, 389 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 25.3906, 24.4997 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 145.534, 89.7134 )
+scale = Vector2( 0.250074, 0.179323 )
+texture = ExtResource( 10 )
+
+[node name="cathead" type="Sprite" parent="."]
+position = Vector2( 165.492, 74.1358 )
+scale = Vector2( 0.153115, 0.153115 )
+texture = ExtResource( 12 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/moveEars = SubResource( 1 )
+
+[node name="leftear" type="Sprite" parent="AnimationPlayer"]
+position = Vector2( 170.573, 86.7028 )
+rotation = 0.0820305
+scale = Vector2( 0.194712, 0.194712 )
+z_index = 1
+texture = ExtResource( 7 )
+
+[node name="rightear" type="Sprite" parent="AnimationPlayer"]
+position = Vector2( 159.257, 81.2108 )
+scale = Vector2( 0.185517, 0.185517 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="name" type="Sprite" parent="."]
+position = Vector2( 152.086, 102.704 )
+scale = Vector2( 0.192787, 0.193416 )
+z_index = 3
+texture = ExtResource( 9 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( 167.315, 129.931 )
+scale = Vector2( 0.178725, 0.178725 )
+
+[node name="closeanimation" type="AnimationPlayer" parent="Area2D2"]
+anims/grow = SubResource( 2 )
+anims/ungrow = SubResource( 3 )
+
+[node name="leaveBtn" type="Sprite" parent="Area2D2/closeanimation"]
+position = Vector2( 167.647, 130.025 )
+scale = Vector2( 0.198234, 0.198234 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 152.086, 102.704 )
+scale = Vector2( 0.192787, 0.193416 )
+
+[node name="playanimation" type="AnimationPlayer" parent="Area2D"]
+anims/grow = SubResource( 5 )
+anims/ungrow = SubResource( 6 )
+
+[node name="playBtn" type="Sprite" parent="Area2D/playanimation"]
+position = Vector2( 168.961, 112.921 )
+scale = Vector2( 0.133718, 0.133718 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 82.5757, 53.7418 )
+shape = SubResource( 7 )
+
+[node name="OpSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="input_event" from="Area2D2" to="." method="_on_Area2D2_input_event"]
+[connection signal="mouse_entered" from="Area2D2" to="." method="_on_Area2D2_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D2" to="." method="_on_Area2D2_mouse_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]

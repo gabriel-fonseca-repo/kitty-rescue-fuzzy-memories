@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lvl4.ogg-877475dc512cddcec2fc7238981e0343.oggstr"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/Musica/Lvl4.ogg"
+dest_files=[ "res://.import/Lvl4.ogg-877475dc512cddcec2fc7238981e0343.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

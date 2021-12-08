@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/gatomorre.mp3-d7b4cad2af10bd7666bbd276abb42e36.mp3str"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/sons/gatomorre.mp3"
+dest_files=[ "res://.import/gatomorre.mp3-d7b4cad2af10bd7666bbd276abb42e36.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

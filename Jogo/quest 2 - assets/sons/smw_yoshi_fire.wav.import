@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/smw_yoshi_fire.wav-7e5ebb1b90827a46a5c1a1ff2a40a5de.sample"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/sons/smw_yoshi_fire.wav"
+dest_files=[ "res://.import/smw_yoshi_fire.wav-7e5ebb1b90827a46a5c1a1ff2a40a5de.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

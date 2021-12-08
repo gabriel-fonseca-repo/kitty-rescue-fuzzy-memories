@@ -1,0 +1,109 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Jogo/quest 2 - assets/iu_370411_8029031 (1).png" type="Texture" id=1]
+[ext_resource path="res://Jogo/Item.gd" type="Script" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/map.wav" type="AudioStream" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 76, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 152, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 228, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 304, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 380, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 456, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 532, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 608, 0, 76, 76 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 684, 0, 76, 76 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CircleShape2D" id=12]
+radius = 9.62934
+
+[sub_resource type="CircleShape2D" id=13]
+radius = 67.6517
+
+[node name="Item" type="StaticBody2D"]
+collision_layer = 8
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0.97899, 0.0270247 )
+shape = SubResource( 12 )
+
+[node name="Raio1" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="Raio1" type="CollisionShape2D" parent="Raio1"]
+shape = SubResource( 13 )
+
+[node name="Raio2" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="Raio2" type="CollisionPolygon2D" parent="Raio2"]
+position = Vector2( -1.29308, 5.22894 )
+scale = Vector2( 0.688359, 0.638304 )
+polygon = PoolVector2Array( 72, -174.1, 72, -169.7, 140, -121.7, 140, -117.1, 175, -54.1, 175, -47.5, 182.1, 19.5, 177, 19.5, 141, 116.5, 136.1, 116.5, 48.1, 176.5, -63, 176.5, -63, 171, -148, 117, -148, 111.6, -193.9, -1.5, -96.1594, -0.993504, -67.9802, 56.315, -20.0755, 89.0627, -22.8933, 83.6048, 39.1011, 80.8758, 89.8239, 29.0252, 89.8239, -9.18042, 84.1879, -52.8441, 41.919, -88.3208, 19.7086, -96.022, 16.5576, -96.5077, -62.3444, -82.8628, -98.2494, -1.55212, -189.95, -4.80111, -187, -34.2, -165.1, -97.5, -161.8, -97.5, -128.443, -152.088, -127.325, -157.503, -72.9, -175.5, -68.2, -175.5, -25, -184.6, -25, -189.2 )
+
+[node name="Raio3" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="Raio3" type="CollisionPolygon2D" parent="Raio3"]
+position = Vector2( -12.5338, -2.47826 )
+scale = Vector2( 1.19552, 1.19219 )
+polygon = PoolVector2Array( -12.5672, -138.418, 31.3757, -137.871, 115.539, -125.442, 123.363, -107.803, 143.284, -77.1889, 160.275, -47.1212, 166.134, 5.36069, 161.447, 25.5881, 144.456, 72.0564, 126.6, 95.4076, 65.7675, 143.912, -50.367, 145.976, -52.5791, 143.912, -122.26, 103.664, -124.472, 102.632, -147.934, 9.55711, -100.445, 0.398905, -75.6148, 67.5854, -15.2093, 97.2776, 0.828283, 94.6976, 51.0174, 93.6491, 105.022, 38.6257, 116.196, -0.759483, 95.395, -50.2992, 56.1304, -83.3234, 23.5022, -92.6115, 11.3357, -95.7075, -62.5791, -81.2674, -101.065, 1.55729, -145.487, 4.59109, -147.699, -13.985, -145.487, -22.2411, -142.169, -41.8492, -141.063, -44.9452, -130.002, -63.5213, -122.26, -85.1934, -102.351, -100.674, -70.5719, -122.017, -53.5807, -134.044 )
+
+[node name="ItemGot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Raio1" to="." method="_on_Raio1_body_entered"]
+[connection signal="body_exited" from="Raio1" to="." method="_on_Raio1_body_exited"]
+[connection signal="body_entered" from="Raio2" to="." method="_on_Raio2_body_entered"]
+[connection signal="body_exited" from="Raio2" to="." method="_on_Raio2_body_exited"]
+[connection signal="body_entered" from="Raio3" to="." method="_on_Raio3_body_entered"]
+[connection signal="body_exited" from="Raio3" to="." method="_on_Raio3_body_exited"]

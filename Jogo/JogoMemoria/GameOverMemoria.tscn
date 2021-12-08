@@ -1,0 +1,98 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Jogo/quest 2 - assets/Fontes/CuteAurora-PK3lZ.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Jogo/quest 2 - assets/Blue Witch Player/B_witch_death.png" type="Texture" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/purplebackground.png" type="Texture" id=3]
+[ext_resource path="res://Jogo/quest 2 - assets/gtoo.png" type="Texture" id=4]
+[ext_resource path="res://Jogo/JogoMemoria/GameOverMemoria.gd" type="Script" id=5]
+[ext_resource path="res://Jogo/quest 2 - assets/Musica/GameOver.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/meow.mp3" type="AudioStream" id=7]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 450, 32, 25 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 1 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 62.396, 145.537 )
+texture = ExtResource( 3 )
+
+[node name="Bruxa" type="AnimatedSprite" parent="."]
+position = Vector2( 159.774, 152.276 )
+scale = Vector2( 2.59375, 2.7 )
+frames = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 65.1802
+margin_top = 22.6814
+margin_right = 255.18
+margin_bottom = 63.6814
+custom_fonts/font = SubResource( 3 )
+text = "Game   ver"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gato" type="Sprite" parent="."]
+position = Vector2( 183.137, 41.2689 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 4 )
+
+[node name="TryAgain" type="Button" parent="."]
+margin_left = 118.366
+margin_top = 70.3557
+margin_right = 203.366
+margin_bottom = 93.3557
+custom_fonts/font = SubResource( 4 )
+text = "Try Again?"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 136.619
+margin_top = 98.2063
+margin_right = 181.619
+margin_bottom = 121.206
+custom_fonts/font = SubResource( 5 )
+text = "Quit"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOverSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[connection signal="button_up" from="TryAgain" to="." method="_on_TryAgain_button_up"]
+[connection signal="pressed" from="TryAgain" to="." method="_on_TryAgain_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

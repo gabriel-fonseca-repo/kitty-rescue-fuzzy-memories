@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Menu_Navigate_00.wav-602637681b1c748933edc5f6d6d4deab.sample"
+
+[deps]
+
+source_file="res://Jogo/resources/style/Menu_Navigate_00.wav"
+dest_files=[ "res://.import/Menu_Navigate_00.wav-602637681b1c748933edc5f6d6d4deab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

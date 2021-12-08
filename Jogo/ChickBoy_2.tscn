@@ -1,0 +1,249 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://Jogo/quest 2 - assets/Evil Wizard/Sprites/Move.png" type="Texture" id=1]
+[ext_resource path="res://Jogo/quest 2 - assets/Evil Wizard/Sprites/Take Hit.png" type="Texture" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/Feitico.png" type="Texture" id=3]
+[ext_resource path="res://Jogo/quest 2 - assets/Evil Wizard/Sprites/Idle.png" type="Texture" id=4]
+[ext_resource path="res://Jogo/quest 2 - assets/Evil Wizard/Sprites/Attack.png" type="Texture" id=5]
+[ext_resource path="res://Jogo/quest 2 - assets/Evil Wizard/Sprites/Death.png" type="Texture" id=6]
+[ext_resource path="res://Jogo/ChickBoy_2.gd" type="Script" id=7]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/FireFx.wav" type="AudioStream" id=8]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/ChickBoy2Dead.wav" type="AudioStream" id=9]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/smw_yoshi_fire.wav" type="AudioStream" id=10]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/chicken (mp3cut.net).mp3" type="AudioStream" id=11]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 3 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 4 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 300, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 450, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
+region = Rect2( 600, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 4 )
+region = Rect2( 750, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 4 )
+region = Rect2( 900, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 4 )
+region = Rect2( 1050, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 6 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 6 )
+region = Rect2( 300, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 6 )
+region = Rect2( 450, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 6 )
+region = Rect2( 600, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
+region = Rect2( 300, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 1 )
+region = Rect2( 450, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 1 )
+region = Rect2( 600, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 750, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 1 )
+region = Rect2( 900, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 1 )
+region = Rect2( 1050, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 2 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 2 )
+region = Rect2( 300, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 2 )
+region = Rect2( 450, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 5 )
+region = Rect2( 150, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 5 )
+region = Rect2( 300, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 5 )
+region = Rect2( 450, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 5 )
+region = Rect2( 600, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 5 )
+region = Rect2( 750, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 5 )
+region = Rect2( 900, 0, 150, 150 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 5 )
+region = Rect2( 1050, 0, 150, 150 )
+
+[sub_resource type="SpriteFrames" id=38]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": false,
+"name": "Puff",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": false,
+"name": "Death",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 14.41, 16.4344 )
+
+[node name="ChickBoy_2" type="KinematicBody2D" groups=[
+"Inimigo",
+]]
+script = ExtResource( 7 )
+
+[node name="Chick2Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 38 )
+animation = "Walk"
+frame = 2
+playing = true
+
+[node name="HitBox" type="CollisionShape2D" parent="."]
+position = Vector2( 1.50169, 7.00791 )
+shape = SubResource( 39 )
+
+[node name="AttackAreaLeft" type="Area2D" parent="."]
+
+[node name="fire" type="CollisionPolygon2D" parent="AttackAreaLeft"]
+polygon = PoolVector2Array( 10.255, -7.25742, 63.148, -24.6103, 69.6553, -0.75008, 63.6486, 25.613, 5.7499, 6.42468 )
+
+[node name="AttackAreaRight" type="Area2D" parent="."]
+
+[node name="fire" type="CollisionPolygon2D" parent="AttackAreaRight"]
+rotation = -3.14159
+polygon = PoolVector2Array( 10.255, -7.25742, 63.148, -24.6103, 69.6553, -0.75008, 63.6486, 25.613, 5.7499, 6.42468 )
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="FireAttackCooldown" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="DeadFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="FireAreaFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="FireFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="HurtFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[connection signal="body_entered" from="AttackAreaLeft" to="." method="_on_AttackAreaLeft_body_entered"]
+[connection signal="body_exited" from="AttackAreaLeft" to="." method="_on_AttackAreaLeft_body_exited"]
+[connection signal="body_entered" from="AttackAreaRight" to="." method="_on_AttackAreaRight_body_entered"]
+[connection signal="body_exited" from="AttackAreaRight" to="." method="_on_AttackAreaRight_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
+[connection signal="timeout" from="FireAttackCooldown" to="." method="_on_FireAttackCooldown_timeout"]

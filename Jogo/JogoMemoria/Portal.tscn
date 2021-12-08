@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Jogo/JogoMemoria/AssetsMemoria/Texture/TX Props.png" type="Texture" id=1]
+
+[node name="Portal" type="Area2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_rect = Rect2( 353, 269, 94, 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

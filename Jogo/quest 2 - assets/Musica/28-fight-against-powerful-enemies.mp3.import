@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/28-fight-against-powerful-enemies.mp3-5095745eb0ddd8255e053cc46920c03a.mp3str"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/Musica/28-fight-against-powerful-enemies.mp3"
+dest_files=[ "res://.import/28-fight-against-powerful-enemies.mp3-5095745eb0ddd8255e053cc46920c03a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

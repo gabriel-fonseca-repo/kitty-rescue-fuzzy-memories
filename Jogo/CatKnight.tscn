@@ -1,0 +1,251 @@
+[gd_scene load_steps=68 format=2]
+
+[ext_resource path="res://Jogo/resources/Knight_idle/Knight_idle_0.tres" type="Texture" id=1]
+[ext_resource path="res://Jogo/resources/Knight_idle/Knight_idle_5.tres" type="Texture" id=2]
+[ext_resource path="res://Jogo/resources/Knight_idle/Knight_idle_3.tres" type="Texture" id=3]
+[ext_resource path="res://Jogo/resources/Knight_idle/Knight_idle_2.tres" type="Texture" id=4]
+[ext_resource path="res://Jogo/resources/Knight_idle/Knight_idle_1.tres" type="Texture" id=5]
+[ext_resource path="res://Jogo/resources/Knight_attack/Knight_attack_0.tres" type="Texture" id=6]
+[ext_resource path="res://Jogo/resources/Knight_attack/Knight_attack_1.tres" type="Texture" id=7]
+[ext_resource path="res://Jogo/resources/Knight_attack/Knight_attack_2.tres" type="Texture" id=8]
+[ext_resource path="res://Jogo/resources/Knight_attack_2/Knight_attack2_0.tres" type="Texture" id=9]
+[ext_resource path="res://Jogo/resources/Knight_attack_2/Knight_attack2_1.tres" type="Texture" id=10]
+[ext_resource path="res://Jogo/resources/Knight_attack_2/Knight_attack2_2.tres" type="Texture" id=11]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_3.tres" type="Texture" id=12]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_1.tres" type="Texture" id=13]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_2.tres" type="Texture" id=14]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_0.tres" type="Texture" id=15]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_4.tres" type="Texture" id=16]
+[ext_resource path="res://Jogo/resources/Kight_death/Knight_death_5.tres" type="Texture" id=17]
+[ext_resource path="res://Jogo/resources/Knight_hurt/Knight_hurt_0.tres" type="Texture" id=18]
+[ext_resource path="res://Jogo/resources/Knight_hurt/Knight_hurt_1.tres" type="Texture" id=19]
+[ext_resource path="res://Jogo/resources/Knight_hurt/Knight_hurt_2.tres" type="Texture" id=20]
+[ext_resource path="res://Jogo/resources/Knight_attack_3/Knight_attack3_0.tres" type="Texture" id=21]
+[ext_resource path="res://Jogo/resources/Knight_attack_3/Knight_attack3_2.tres" type="Texture" id=22]
+[ext_resource path="res://Jogo/resources/Knight_attack_3/Knight_attack3_1.tres" type="Texture" id=23]
+[ext_resource path="res://Jogo/resources/Knight_attack_3/Knight_attack3_4.tres" type="Texture" id=24]
+[ext_resource path="res://Jogo/resources/Knight_attack_3/Knight_attack3_3.tres" type="Texture" id=25]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_0.tres" type="Texture" id=26]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_3.tres" type="Texture" id=27]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_6.tres" type="Texture" id=28]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_1.tres" type="Texture" id=29]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_4.tres" type="Texture" id=30]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_2.tres" type="Texture" id=31]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_7.tres" type="Texture" id=32]
+[ext_resource path="res://Jogo/resources/Knight_walk/Knight_walk_5.tres" type="Texture" id=33]
+[ext_resource path="res://Jogo/quest 2 - assets/Cat Sprite Sheet.png" type="Texture" id=34]
+[ext_resource path="res://Jogo/quest 2 - assets/Feitico.png" type="Texture" id=35]
+[ext_resource path="res://Jogo/CatKnight.gd" type="Script" id=36]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/Attack1.wav" type="AudioStream" id=37]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/Attack3.wav" type="AudioStream" id=38]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/Attack2.wav" type="AudioStream" id=39]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/CatHurt.wav" type="AudioStream" id=40]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/CatDead.wav" type="AudioStream" id=41]
+[ext_resource path="res://Jogo/quest 2 - assets/sons/Puff.wav" type="AudioStream" id=42]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 34 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 34 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 34 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 34 )
+region = Rect2( 32, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 34 )
+region = Rect2( 64, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 34 )
+region = Rect2( 96, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 34 )
+region = Rect2( 32, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 34 )
+region = Rect2( 64, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 34 )
+region = Rect2( 96, 64, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 96, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 34 )
+region = Rect2( 32, 96, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 34 )
+region = Rect2( 64, 96, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 34 )
+region = Rect2( 96, 96, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 35 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 35 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 35 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "Transform",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Attack1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 25 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "Attack3",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"loop": false,
+"name": "Puff",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Attack2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "Death",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 9.87119, 11.3441 )
+
+[sub_resource type="CapsuleShape2D" id=23]
+radius = 144.873
+height = 2.68819
+
+[sub_resource type="CircleShape2D" id=24]
+radius = 29.7701
+
+[sub_resource type="CapsuleShape2D" id=25]
+radius = 10.3927
+height = 43.5383
+
+[node name="CatKnight" type="KinematicBody2D"]
+collision_layer = 16
+script = ExtResource( 36 )
+
+[node name="CatKnightSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 21 )
+animation = "Attack3"
+frame = 2
+playing = true
+
+[node name="Collision_Idle" type="CollisionShape2D" parent="."]
+shape = SubResource( 22 )
+
+[node name="PlayerDetector" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="PlayerDetector" type="CollisionShape2D" parent="PlayerDetector"]
+shape = SubResource( 23 )
+
+[node name="AttackTrigger" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="AttackTrigger" type="CollisionShape2D" parent="AttackTrigger"]
+position = Vector2( -0.0883942, -0.618719 )
+shape = SubResource( 24 )
+
+[node name="AttackRange" type="Area2D" parent="."]
+z_index = 1
+collision_layer = 16
+
+[node name="AttackRanger" type="CollisionShape2D" parent="AttackRange"]
+position = Vector2( -1.5017, 0.500566 )
+rotation = 1.57574
+shape = SubResource( 25 )
+
+[node name="DialogueBoxPosition" type="Position2D" parent="."]
+position = Vector2( -112.43, -83.4386 )
+
+[node name="Attack1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 37 )
+
+[node name="Attack2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 39 )
+
+[node name="Attack3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 38 )
+
+[node name="Hurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 40 )
+
+[node name="Dead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 41 )
+
+[node name="Puff" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 42 )
+
+[connection signal="animation_finished" from="CatKnightSprite" to="." method="_on_CatKnightSprite_animation_finished"]
+[connection signal="body_entered" from="PlayerDetector" to="." method="_on_PlayerDetector_body_entered"]
+[connection signal="body_exited" from="PlayerDetector" to="." method="_on_PlayerDetector_body_exited"]
+[connection signal="area_entered" from="AttackTrigger" to="." method="_on_AttackTrigger_area_entered"]
+[connection signal="body_entered" from="AttackTrigger" to="." method="_on_AttackTrigger_body_entered"]
+[connection signal="body_entered" from="AttackRange" to="." method="_on_AttackRange_body_entered"]
+[connection signal="body_exited" from="AttackRange" to="." method="_on_AttackRange_body_exited"]

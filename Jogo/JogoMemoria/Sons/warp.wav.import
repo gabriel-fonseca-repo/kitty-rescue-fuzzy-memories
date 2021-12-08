@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/warp.wav-4664e268337f7ff59465cb99757af8c1.sample"
+
+[deps]
+
+source_file="res://Jogo/JogoMemoria/Sons/warp.wav"
+dest_files=[ "res://.import/warp.wav-4664e268337f7ff59465cb99757af8c1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

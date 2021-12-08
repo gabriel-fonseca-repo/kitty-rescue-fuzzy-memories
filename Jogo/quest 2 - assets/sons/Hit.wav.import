@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Hit.wav-e8705d9ca55818e0ccf36de4c0659458.sample"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/sons/Hit.wav"
+dest_files=[ "res://.import/Hit.wav-e8705d9ca55818e0ccf36de4c0659458.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

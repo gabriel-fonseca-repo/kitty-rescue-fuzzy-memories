@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Jogo/JogoMemoria/Bruxinha.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Jogo/JogoMemoria/ChickBoyMemoria.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Jogo/JogoMemoria/DialogueBoxMemoria.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Jogo/JogoMemoria/LevelTesteY.gd" type="Script" id=4]
+
+[node name="LevelTeste" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Bruxinha" parent="." instance=ExtResource( 1 )]
+position = Vector2( 115.458, 73.6901 )
+z_index = 1
+
+[node name="CameraBruxinha" type="Camera2D" parent="Bruxinha"]
+zoom = Vector2( 1.5, 1.5 )
+limit_left = 0
+limit_top = 0
+limit_right = 1120
+limit_bottom = 672
+
+[node name="ChickBoyMemoria" parent="." instance=ExtResource( 2 )]
+position = Vector2( 885, 66.1695 )
+
+[node name="CameraChickBoy" type="Camera2D" parent="ChickBoyMemoria"]
+position = Vector2( 2.37842, 32.1086 )
+
+[node name="DialogueBox2" parent="." instance=ExtResource( 3 )]
+margin_left = 420.9
+margin_top = 350.658
+margin_right = 657.901
+margin_bottom = 427.657
+
+[node name="CameraBruxinha2" type="Camera2D" parent="."]
+position = Vector2( 548.728, 363.285 )
+zoom = Vector2( 1.5, 1.5 )
+limit_left = 0
+limit_top = 0
+limit_right = 1120
+limit_bottom = 672
+
+[node name="DialogueBox" parent="." instance=ExtResource( 3 )]

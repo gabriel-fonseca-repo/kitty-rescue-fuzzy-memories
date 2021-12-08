@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Jogo/quest 2 - assets/Musica/Final.mp3" type="AudioStream" id=1]
+
+[node name="FinalSong" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )

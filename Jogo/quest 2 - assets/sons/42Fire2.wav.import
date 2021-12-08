@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/42Fire2.wav-91ed2dd1c9b1b450baca5fdcd23c2f23.sample"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/sons/42Fire2.wav"
+dest_files=[ "res://.import/42Fire2.wav-91ed2dd1c9b1b450baca5fdcd23c2f23.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

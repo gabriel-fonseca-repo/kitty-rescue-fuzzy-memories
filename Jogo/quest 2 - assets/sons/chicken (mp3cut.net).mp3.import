@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chicken (mp3cut.net).mp3-96c6b7f859211908c45b214a6f057988.mp3str"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/sons/chicken (mp3cut.net).mp3"
+dest_files=[ "res://.import/chicken (mp3cut.net).mp3-96c6b7f859211908c45b214a6f057988.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

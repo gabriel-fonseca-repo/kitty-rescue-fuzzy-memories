@@ -1,0 +1,494 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Jogo/DialogueBox.gd" type="Script" id=1]
+[ext_resource path="res://Jogo/quest 2 - assets/Fontes/Minecraftia-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Jogo/quest 2 - assets/Illustration2.png" type="Texture" id=3]
+[ext_resource path="res://Jogo/quest 2 - assets/Illustratio9gkgg2.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "ArenaChickBoy1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "ArenaChickBoy2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "ArenaChickBoy3"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy3:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "ArenaChickBoy4"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy4:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "ArenaChickBoy5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy5:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "ArenaChickBoy6"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaChickBoy6:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "ArenaKitty1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaKitty1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "ArenaKitty2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaKitty2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "ArenaKitty3"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaKitty3:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "ArenaKitty4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArenaKitty4:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Intro1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Intro2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level1:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Level3:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="DialogueBox" type="Control"]
+margin_left = 3.0
+margin_right = 240.0
+margin_bottom = 77.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_left = 1.25
+anchor_top = 0.6
+anchor_right = 1.25
+anchor_bottom = 0.6
+margin_left = -298.098
+margin_top = -46.2493
+margin_right = -69.0978
+margin_bottom = 32.7507
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro1" type="Label" parent="."]
+visible = false
+margin_left = 3.12577
+margin_top = 3.61401
+margin_right = 174.126
+margin_bottom = 75.614
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: *Huff puff* Welp, this is the farthest I was able to track them. All the way to this... not-dense-at-all... totally-not-creepy forest. "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro2" type="Label" parent="."]
+visible = false
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 157.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: ..........Where the heck am I?
+No matter, wait for me, my babies, I'm coming to get you. Then I'll find out WHO'S BEEN MESSING WITH MY KITTIES!!!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1" type="Label" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 158.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: GERALDO? It's you, isn't it?
+C'm'ere, baby boy, I forgive you for trying to kill mama <3 Let's find the rest of your brothers now, shall we?"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Label" parent="."]
+visible = false
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 166.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: Mamão! So glad you're safe! Sorry I had to hit you that hard <3
+One more to go!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Label" parent="."]
+visible = false
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: Aww, Lorthemar, who's a cute little boy? 
+*Ahem* let's find out who's behind this madness so I can kick their butt once and for all!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy1" type="Label" parent="."]
+visible = false
+margin_left = 3.51973
+margin_top = 3.61401
+margin_right = 174.52
+margin_bottom = 75.614
+custom_fonts/font = SubResource( 1 )
+text = "???: So, you've found me."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaKitty1" type="Label" parent="."]
+visible = false
+margin_left = 2.60533
+margin_top = 4.28143
+margin_right = 173.605
+margin_bottom = 76.2814
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: What the heck, why is there a chicken talking to me?"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy2" type="Label" parent="."]
+visible = false
+margin_left = 4.97217
+margin_top = 6.23281
+margin_right = 175.972
+margin_bottom = 78.2328
+custom_fonts/font = SubResource( 1 )
+text = "???: .... I'm not a CHICKEN. I'm the CHICK BOY!!!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaKitty2" type="Label" parent="."]
+visible = false
+margin_left = 3.60648
+margin_top = 5.10907
+margin_right = 174.606
+margin_bottom = 77.1091
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: ..... That's the stupidest thing I've ever heard."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy3" type="Label" parent="."]
+visible = false
+margin_left = 3.27275
+margin_top = 4.03445
+margin_right = 174.273
+margin_bottom = 76.0345
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: WHATEVER! I'm gonna make you pay, Kitty the Witch, for what you did to me on that fateful night... "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy4" type="Label" parent="."]
+visible = false
+margin_left = 4.0
+margin_top = 3.0
+margin_right = 165.0
+margin_bottom = 84.0
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: On Halloween last year... You had the gall to REFUSE me treats! ME! So you made your choice - It's TRICKS GALORE FOR YOU, KITTY THE WITCH!
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy5" type="Label" parent="."]
+visible = false
+margin_left = 3.94018
+margin_top = 4.10795
+margin_right = 174.94
+margin_bottom = 76.1079
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: *huff puff* Impossible... I've studied the forbidden arts... There's no way you could've beaten me!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaKitty3" type="Label" parent="."]
+visible = false
+margin_left = 3.77995
+margin_top = 5.03558
+margin_right = 174.78
+margin_bottom = 77.0356
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: Dude...I WROTE the Forbidden Arts! Now leave me and my babies alone forever and ever kthnx. "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaChickBoy6" type="Label" parent="."]
+visible = false
+margin_left = 3.85344
+margin_top = 4.86211
+margin_right = 174.853
+margin_bottom = 76.8621
+custom_fonts/font = SubResource( 1 )
+text = "CHICK BOY: This isn't the end, Kitty the Witch, you'll have your comeuppance soon enough! "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArenaKitty4" type="Label" parent="."]
+visible = false
+margin_left = 5.33823
+margin_top = 4.66855
+margin_right = 161.338
+margin_bottom = 76.6685
+custom_fonts/font = SubResource( 1 )
+text = "KITTY: .......I've no idea what that word even means.
+Anyway! Let's go home, babies, mama is beat! <3"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortraitBruxinha" type="Sprite" parent="."]
+visible = false
+position = Vector2( 205.125, 43.7846 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+flip_h = true
+
+[node name="PortraitChickBoy" type="Sprite" parent="."]
+visible = false
+position = Vector2( 208.395, 40.5143 )
+scale = Vector2( 3.5, 3.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/ArenaChickBoy1 = SubResource( 2 )
+anims/ArenaChickBoy2 = SubResource( 3 )
+anims/ArenaChickBoy3 = SubResource( 4 )
+anims/ArenaChickBoy4 = SubResource( 5 )
+anims/ArenaChickBoy5 = SubResource( 6 )
+anims/ArenaChickBoy6 = SubResource( 7 )
+anims/ArenaKitty1 = SubResource( 8 )
+anims/ArenaKitty2 = SubResource( 9 )
+anims/ArenaKitty3 = SubResource( 10 )
+anims/ArenaKitty4 = SubResource( 11 )
+anims/Intro1 = SubResource( 12 )
+anims/Intro2 = SubResource( 13 )
+anims/Level1 = SubResource( 14 )
+anims/Level2 = SubResource( 15 )
+anims/Level3 = SubResource( 16 )

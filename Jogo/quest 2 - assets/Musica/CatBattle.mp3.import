@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/CatBattle.mp3-4856f6e97a5a9ceb5bfeaa07ec97be65.mp3str"
+
+[deps]
+
+source_file="res://Jogo/quest 2 - assets/Musica/CatBattle.mp3"
+dest_files=[ "res://.import/CatBattle.mp3-4856f6e97a5a9ceb5bfeaa07ec97be65.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
